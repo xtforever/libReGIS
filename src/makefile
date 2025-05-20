@@ -56,4 +56,5 @@ clean:
 
 install:
 	install -m 755 -D ReGIS.h ../include/ReGIS.h
+	install -m 755 -D 3d.h ../include/3d.h
 	install -m 755 -D libregis.a ../lib/libregis.a
