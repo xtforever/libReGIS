@@ -1,12 +1,10 @@
 CC=gcc
-CFLAGS=-Isrc
-LDFLAGS=-L.
-LOADLIBES=-lregis
+CFLAGS=-I../include
+LDFLAGS=-L../lib
+LOADLIBES=-lregis -lm
 
-all: planet_motion
+all: regis_demo planet_motion
 
-CFLAGS+=-I.
-LOADLIBES+=-lm
 planet_motion: planet_motion.o planet_motion_fns.o 
 
 regis_demo:
