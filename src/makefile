@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-static
+CFLAGS=
 # $(wildcard *.c)
 FILES=dot_v.c \
 draw_abs.c \
@@ -53,3 +53,7 @@ libregis.a: ${OFILES}
 clean:
 	$(RM) *.o
 	$(RM) libregis.a
+
+install:
+	install -m 755 -D ReGIS.h ../include/ReGIS.h
+	install -m 755 -D libregis.a ../lib/libregis.a
